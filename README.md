@@ -40,8 +40,8 @@ Users should be able to:
 
 ## Author
 
-- Website - [Mathías]([https://www.your-site.com)](https://mathitarazonad.github.io/Time-Tracking-Page/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Mathitarazonad)
+- Website - [Time Tracker](https://mathitarazonad.github.io/Time-Tracking-Page/)
+- Frontend Mentor - [@MathiTarazonad](https://www.frontendmentor.io/profile/Mathitarazonad)
 
 ## Acknowledgments
 
