@@ -14,9 +14,9 @@ Users should be able to:
 
 ### Screenshot
 
-[Desktop Design](./screenshots/Dekptop-Design)
-./screenshots/Tablet Design
-./screenshots/Mobile Design
+[Desktop Design](/screenshots/Dekptop-Design)
+[Tablet Design](./screenshots/Tablet-Design)
+[Mobile Design](/screenshots/Mobile Design)
 
 ### Links
 
