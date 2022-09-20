@@ -14,7 +14,7 @@ Users should be able to:
 
 ### Screenshot
 
-./screenshots/Dekptop Design
+[Desktop Design]./screenshots/Dekptop Design
 ./screenshots/Tablet Design
 ./screenshots/Mobile Design
 
