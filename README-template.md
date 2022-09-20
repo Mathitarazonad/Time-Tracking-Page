@@ -14,9 +14,11 @@ Users should be able to:
 
 ### Screenshot
 
-[Desktop Design](/screenshots/Dekptop-Design)
-[Tablet Design](./screenshots/Tablet-Design)
-[Mobile Design](/screenshots/Mobile Design)
+[Desktop Design](/screenshots/Desktop-Design.png)
+
+[Tablet Design](/screenshots/Tablet-Design.png)
+
+[Mobile Design](/screenshots/Mobile-Design.png)
 
 ### Links
 
