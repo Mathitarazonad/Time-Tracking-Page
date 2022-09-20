@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--Gray: rgb(111, 111, 111);
+	--Blue: hsl(246, 80%, 60%);
+	--Orange: hsl(15, 100%, 70%);
+	--Soft-blue: hsl(195, 74%, 62%);
+	--Red: hsl(348, 100%, 68%);
+	--Lime-green: hsl(145, 58%, 55%);
+	--Violet: hsl(264, 64%, 52%);
+	--Yellow: hsl(43, 84%, 65%);
+	--Very-dark-blue: hsl(226, 43%, 10%);
+	--Dark-blue: hsl(235, 46%, 20%);
+	--Desaturated-blue: hsl(235, 45%, 61%);
+	--Pale-Blue: hsl(236, 100%, 87%);
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+	padding: 1.25rem;
+	background-color: var(--Very-dark-blue);
+	color: white;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+  gap: 20px;
+  z-index:13;
+}
+
+
+/*User Card*/
+#card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/*Card - Top section of card*/
+#user-card #user-card-data {
+	background-color: var(--Blue);
+	width: 100%;
+	display: flex;
+	padding: 1.5rem 1.2rem;
+	border-radius: 12px;
+	align-items: center;
+	justify-content: space-evenly;
+  z-index: 2;
+}
+
+.profile-data-image {
+	display: block;
+}
+
+.profile-data-image img{
+	display: block;
+	width: 75px;
+	border: 3px solid white;
+	border-radius: 50px;
+}
+
+.profile-data-info h3 {
+	color: var(--Pale-Blue);
+  font-size: 1rem;
+}
+/*Card - Top section of card*/
+
+/*Card- Bottom section of card*/
+#card-frequency {
+  z-index: 1;
+  top: -10px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 85px;
+  background-color: var(--Dark-blue);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  font-size: 19px;
+  color: var(--Pale-Blue);
+  letter-spacing: 1.5px;
+}
+.frequencies.active, .frequencies:hover{
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+/*User Card*/
+
+
+/*Activities Cards*/
+#activities-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.activity-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Activity Card - Top*/
+.card-bg {
+  height: 90px;
+  width: 99.5%;
+  background-color: var(--Orange);
+  display: flex;
+  justify-content: flex-end;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  overflow: hidden;
+  z-index: -1;
+}
+.card-bg img {
+  position: relative;
+  right: 17px;
+  top: -10px;
+  z-index: 0;
+  max-width: 90px;
+}
+
+/*Activity Card - Bottom - Title*/
+.card-data {
+  width: 100%;
+  background-color: var(--Dark-blue);
+  border-radius: 12px;
+  padding: 1.4rem 1.7rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -30px;
+}
+.card-data:hover {
+  transition: .5s;
+  background-color: hsla(235, 35%, 43%, 0.987);
+}
+.card-data-activity {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+  align-items: center;
+}
+.card-data-activity h3 {
+  font-size: 22px;
+}
+.card-data-activity img {
+  width: 25px;
+  height: 7px;
+}
+.card-data-activity img:hover {
+  transition: .5s;
+  transform: scale(1.1);
+}
+
+/*Activity Card - Bottom - Hours*/
+.card-data-hours {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-data-hours h2 {
+  font-size: 2rem;
+}
+.card-data-hours p {
+  font-size: 1.1rem;
+  color: var(--Pale-Blue);
+}
+
+
+@media (min-width: 600px) {
+  main {
+    padding: 2rem;
+  }
+} 
+
+@media (min-width: 750px) {
+ #user-card #user-card-data {
+  justify-content: center;
+  gap: 40px;
+ } 
+ .profile-data-image img{
+  width: 100px;
+ }
+ .profile-data-info h3{
+  font-size: 1.5rem;
+ }
+ .profile-data-info h1 {
+  font-size: 2rem;
+ }
+ #card-frequency {
+  font-size: 1.4rem;
+ }
+ #activities-section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+ }
+ .card-bg {
+  width: 99.6%;
+
+ }
+ .card-data {
+  height: 170px;
+  gap: 25px;
+ }
+ .card-data-hours {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+ }
+ .card-data-activity h3 {
+  font-size: 1.1rem;
+ }
+}
+
+@media (min-width: 1200px) {
+  .main-container {
+    flex-direction: row;
+    padding: 15rem 3rem;
+    justify-content: center;
+  }
+  #card {
+    height: 100%;
+    width: 250px;
+  }
+  #user-card #user-card-data {
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 2.5rem;
+  }
+  .profile-data-image img {
+    width: 120px;
+    border-radius: 50%;
+  }
+  .profile-data-info {
+    margin-top: 1rem;
+  }
+  .profile-data-info h1{
+    font-size: 3rem;
+  }
+  #card-frequency {
+    height: 250px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 25px;
+  }
+  .activity-card {
+    width: 240px;
+    position: relative;
+  }
+  .card-bg {
+    position: absolute;
+    top: -30px;
+  }
+  .card-data {
+    top: 24px;
+    height: 240px;
+  }
+  .card-data-activity h3{
+    font-size: 1.25rem;
+  }
+  .card-data-hours {
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card-data-hours h2 {
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+  }
+
+}
