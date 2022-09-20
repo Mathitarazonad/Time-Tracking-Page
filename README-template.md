@@ -14,9 +14,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/Desktop Design)
-
-
+./screenshots/Dekptop Design
+./screenshots/Tablet Design
+./screenshots/Mobile Design
 
 ### Links
 
