@@ -21,7 +21,7 @@ function renderCards (freq = 'daily') {
     activitiesSection.innerHTML += `
     <div class="activity-card">
       <div class="card-bg" style="background-color: ${bgColors[activity.title]}">
-        <img src="./images/icon-${activity.title === 'Self Care' ? 'self-care' : activity.title}.svg" alt="${activity.title}-icon">
+        <img src="./images/icon-${activity.title === 'Self Care' ? 'self-care' : activity.title.toLowerCase()}.svg" alt="${activity.title}-icon">
       </div>
 
       <div class="card-data">
